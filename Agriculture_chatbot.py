@@ -4,7 +4,7 @@ from streamlit_mic_recorder import speech_to_text
 
 # Gemini client
 import google.generativeai as genai
-client = genai.configure(api_key=st.secrets["AIzaSyBDPR35YqUMn2gjQZ1TlT0-KrUlpSAJ-a8"])
+client = genai.Client(api_key="AIzaSyBDPR35YqUMn2gjQZ1TlT0-KrUlpSAJ-a8")
 
 # Page config
 st.set_page_config(page_title="एग्रीमित्र - Agriculture Chatbot", page_icon="🌱", layout="wide")
