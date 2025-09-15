@@ -85,6 +85,11 @@ st.markdown("""
         background: white !important;
         border-top: 1px solid #ddd !important;
     }
+    /* Input box text color */
+    .stTextInput input {
+        color: white !important;
+        background-color: #333333 !important; /* dark background for visibility */
+    }
     </style>
 """, unsafe_allow_html=True)
 
