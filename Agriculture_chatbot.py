@@ -69,7 +69,7 @@ st.markdown("""
 
     /* Chat input box */
     div[data-testid="stChatInput"] {
-        background: white !important;
+        background: black !important;
         border: 1px solid #ddd !important;
         border-radius: 10px !important;
         box-shadow: none !important;
