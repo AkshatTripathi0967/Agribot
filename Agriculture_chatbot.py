@@ -67,13 +67,7 @@ st.markdown("""
         background: #f9f9f9 !important;
     }
 
-    /* Chat input box */
-    div[data-testid="stChatInput"] {
-        background: black !important;
-        border: 1px solid #ddd !important;
-        border-radius: 10px !important;
-        box-shadow: none !important;
-    }
+    
 
     div[data-testid="stChatInput"] textarea {
         background: transparent !important;
