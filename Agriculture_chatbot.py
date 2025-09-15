@@ -77,19 +77,11 @@ st.markdown("""
 
     div[data-testid="stChatInput"] textarea {
         background: transparent !important;
-        color: black !important;
+        color: white !important;
     }
 
-    /* Chat input container (bottom area) */
-    section[data-testid="stChatInputRoot"] {
-        background: white !important;
-        border-top: 1px solid #ddd !important;
-    }
-    /* Input box text color */
-    .stTextInput input {
-        color: white !important;
-        background-color: #333333 !important; /* dark background for visibility */
-    }
+    
+    
     </style>
 """, unsafe_allow_html=True)
 
