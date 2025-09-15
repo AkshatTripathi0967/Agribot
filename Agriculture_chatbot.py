@@ -4,7 +4,7 @@ from streamlit_mic_recorder import speech_to_text
 
 # Gemini client
 import google.generativeai as genai
-client = genai.Client(api_key="AIzaSyBY-uaVly9sOrzS7osrse9-dD1cy1ZEEQI")
+client = genai.configure(api_key=st.secrets["AIzaSyBY-uaVly9sOrzS7osrse9-dD1cy1ZEEQI"])
 
 # Page config
 st.set_page_config(page_title="एग्रीमित्र - Agriculture Chatbot", page_icon="🌱", layout="wide")
@@ -114,8 +114,7 @@ if user_input:
         contents=user_input
     )
 
-    response = genai.GenerativeModel("gemini-2.5-flash").generate_content(user_input)
-    bot_text = response.text
+    bot_text = response.candidates[0].content.parts[0].text
 
     st.markdown(f'<div class="chat-bubble bot">🤖 {bot_text}</div>', unsafe_allow_html=True)
 
