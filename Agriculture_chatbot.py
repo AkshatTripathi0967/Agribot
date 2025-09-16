@@ -71,7 +71,7 @@ st.markdown("""
 
     div[data-testid="stChatInput"] textarea {
         background: transparent !important;
-        color: white !important;
+        color: black !important;
     }
 
     
