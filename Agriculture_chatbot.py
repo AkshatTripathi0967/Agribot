@@ -83,7 +83,7 @@ st.markdown("""
 st.markdown('<div class="main-title">🌾 एग्रीमित्र में आपका स्वागत है 🌾</div>', unsafe_allow_html=True)
 
 # 🎤 Voice input
-voice_input = speech_to_text(language="hi-IN", use_container_width=True, always=True, key="voice")
+voice_input = speech_to_text(language="hi-IN", use_container_width=True, just_once=True, key="voice")
 
 # ⌨️ Chat input
 text_input = st.chat_input("जो पूछना है वो यहाँ लिखें...")
